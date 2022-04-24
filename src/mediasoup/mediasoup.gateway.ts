@@ -27,7 +27,7 @@ import { throwRoomNotFound } from '../common/errors';
 import { IRoom } from './mediasoup.interfaces';
 // import config from 'config';
 // const appSettings = config.get<IAppSettings>('APP_SETTINGS');
-@WebSocketGateway(3201)
+@WebSocketGateway()
 export class MediasoupGateway<T extends IRoom>
     implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect {
     @WebSocketServer()
